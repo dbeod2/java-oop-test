@@ -1,10 +1,9 @@
 import java.awt.*;
 
 public class ScreenApplication {
-  private Menu menu1 = new Menu("menu1");
-  private Menu menu2 = new Menu("menu2");
-  private Menu menu3 = new Menu("menu3");
-  private Button button = new Button("button1");
+  private final Menu menu1 = new Menu("menu1");
+  private final Menu menu2 = new Menu("menu2");
+  private final Button button = new Button("button1");
 
   private ScreenUiInterface currentScreen = null;
 
@@ -14,7 +13,7 @@ public class ScreenApplication {
     button.setOnClickListener(buttonListener);
   }
 
-  private OnClickListener menuListener = new OnClickListener() {
+  private final OnClickListener menuListener = new OnClickListener() {
     public void clicked(Component eventSource) {
       if(eventSource.getName().equals("menu1")) {
         currentScreen = new FirstMenuScreenUi();
@@ -27,7 +26,7 @@ public class ScreenApplication {
     }
   };
 
-  private OnClickListener buttonListener = new OnClickListener() {
+  private final OnClickListener buttonListener = new OnClickListener() {
     public void clicked(Component eventSource) {
       if(currentScreen == null) {
         return;
