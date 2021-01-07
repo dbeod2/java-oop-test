@@ -1,7 +1,14 @@
+package example;
+
 public class SecondMenuScreenUi implements ScreenUiInterface {
   @Override
   public void show() {
     System.out.println("두번째 메뉴 화면으로 전환 ");
+  }
+
+  @Override
+  public void handleButtonFirstClick() {
+
   }
 
   @Override

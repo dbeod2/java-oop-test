@@ -1,3 +1,5 @@
+package example;
+
 import java.awt.*;
 
 public class ScreenApplication {
