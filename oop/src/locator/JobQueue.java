@@ -1,7 +1,7 @@
 package locator;
 
 public interface JobQueue {
-  void addJob();
+  void addJob(JobData jobData);
 
-  void getJob();
+  JobData getJob();
 }

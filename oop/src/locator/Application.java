@@ -15,5 +15,7 @@ public class Application {
     final Worker worker = new Worker(""); //객체 생성 , 실행
     Thread t = new Thread(() -> worker.run());
     System.out.println(t);
+    JobCLI cli = new JobCLI(jobQueue);
+    cli.interact();
   }
 }

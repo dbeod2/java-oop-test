@@ -2,12 +2,13 @@ package locator;
 
 public class FileJobQueue implements JobQueue {
   @Override
-  public void addJob() {
+  public void addJob(JobData jobData) {
 
   }
 
   @Override
-  public void getJob() {
+  public JobData getJob() {
 
+    return null;
   }
 }
